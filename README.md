@@ -1,4 +1,4 @@
-# all-charts
+# Chart in vue with vue3-chart-v2 and chart.js
 
 ## Project setup
 ```
