@@ -6,33 +6,62 @@ export default {
   data() {
     return {
       chartData: {
-        labels: ["Babol", "Cabanatuan", "Daegu", "Jerusalem"],
+        labels: [
+          "Falkenberg",
+          "Halmstad",
+          "Hylte",
+          "Kungsbacka",
+          "Laholm",
+          "Varberg",
+        ],
         datasets: [
           {
-            borderWidth: 1,
-            borderColor: [
-              "rgba(255,99,132,1)",
-              "rgba(54, 162, 235, 1)",
-              "rgba(255, 206, 86, 1)",
-              "rgba(75, 192, 192, 1)",
-            ],
+            label: "Population",
+            data: [46051, 103754, 10649, 84930, 25967, 65397],
+
             backgroundColor: [
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(54, 162, 235, 0.2)",
-              "rgba(255, 206, 86, 0.2)",
-              "rgba(75, 192, 192, 0.2)",
-              "rgba(153, 102, 255, 0.2)",
+              "rgba(255, 145, 175)",
+              "rgba(250, 165, 168)",
+              "rgba(246, 185, 161)",
+              "rgba(241, 204, 153)",
+              "rgba(237, 224, 146)",
+              "rgba(232, 244, 139)",
             ],
-            data: [1000, 500, 1500, 1000],
+            borderColor: [
+              "rgba(255, 145, 175)",
+              "rgba(250, 165, 168)",
+              "rgba(246, 185, 161)",
+              "rgba(241, 204, 153)",
+              "rgba(237, 224, 146)",
+              "rgba(232, 244, 139)",
+            ],
+            borderWidth: 1,
           },
         ],
       },
       options: {
-        legend: {
-          display: true,
-        },
         responsive: true,
         maintainAspectRatio: false,
+
+        title: {
+          display: true,
+          text: "Population of Halland",
+          fontColor: "hotpink",
+          fontSize: 24,
+          position: "left",
+          padding: 16,
+        },
+        legend: {
+          align: "center",
+          position: "right",
+          labels: {
+            fontColor: "black",
+            fontSize: 14,
+          },
+        },
+        layout: {
+          padding: 0,
+        },
       },
     };
   },

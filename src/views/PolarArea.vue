@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3>Polar Area Chart Example in Vue</h3>
-    <polar-area-chart></polar-area-chart>
+    <h2>Polar Area Chart in vue with vue3-chart-v2 and chart.js</h2>
+    <PolarAreaChart />
   </div>
 </template>
 

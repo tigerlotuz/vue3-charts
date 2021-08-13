@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Line Chart Example in Vue</h3>
+    <h2>Line Chart in vue with vue3-chart-v2 and chart.js</h2>
     <LineChart />
   </div>
 </template>

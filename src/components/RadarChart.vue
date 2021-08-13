@@ -7,41 +7,47 @@ export default {
     return {
       chartData: {
         labels: [
-          "Babol",
-          "Cabanatuan",
-          "Daegu",
-          "Jerusalem",
-          "Fairfield",
-          "New York",
-          "Gangtok",
-          "Buenos Aires",
-          "Hafar Al-Batin",
-          "Idlib",
+          "Falkenberg",
+          "Halmstad",
+          "Hylte",
+          "Kungsbacka",
+          "Laholm",
+          "Varberg",
         ],
         datasets: [
           {
-            label: "Radar Chart",
-            borderWidth: 1,
-            backgroundColor: "rgba(54, 162, 235, 0.2)",
+            label: "Population",
+            data: [46051, 103754, 10649, 84930, 25967, 65397],
 
-            data: [
-              32127289,
-              24724027,
-              25820412,
-              23685667,
-              25644258,
-              22433220,
-              22966210,
-              22743184,
-              21880515,
-              21543111,
-            ],
+            backgroundColor: "rgba(255, 145, 175, 0.4)",
+            borderColor: "hotpink",
+            borderWidth: 1,
           },
         ],
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
+
+        title: {
+          display: true,
+          text: "Population of Halland",
+          fontColor: "hotpink",
+          fontSize: 24,
+          position: "left",
+          padding: 16,
+        },
+        legend: {
+          align: "center",
+          position: "right",
+          labels: {
+            fontColor: "black",
+            fontSize: 14,
+          },
+        },
+        layout: {
+          padding: 0,
+        },
       },
     };
   },

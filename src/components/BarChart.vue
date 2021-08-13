@@ -3,6 +3,7 @@ import { Bar } from "vue3-chart-v2";
 
 export default {
   extends: Bar,
+  name: "BarChart",
   data() {
     return {
       chartData: {
@@ -16,42 +17,51 @@ export default {
         ],
         datasets: [
           {
-            label: "Population",
-            borderWidth: 1,
+            label: "Bar",
+            data: [46051, 103754, 10649, 84930, 25967, 65397],
+
             backgroundColor: [
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(54, 162, 235, 0.2)",
-              "rgba(255, 206, 86, 0.2)",
-              "rgba(75, 192, 192, 0.2)",
-              "rgba(153, 102, 255, 0.2)",
-              "rgba(255, 159, 64, 0.2)",
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(54, 162, 235, 0.2)",
-              "rgba(255, 206, 86, 0.2)",
-              "rgba(75, 192, 192, 0.2)",
-              "rgba(153, 102, 255, 0.2)",
-              "rgba(255, 159, 64, 0.2)",
+              "rgba(255, 145, 175)",
+              "rgba(250, 165, 168)",
+              "rgba(246, 185, 161)",
+              "rgba(241, 204, 153)",
+              "rgba(237, 224, 146)",
+              "rgba(232, 244, 139)",
             ],
             borderColor: [
-              "rgba(255,99,132,1)",
-              "rgba(54, 162, 235, 1)",
-              "rgba(255, 206, 86, 1)",
-              "rgba(75, 192, 192, 1)",
-              "rgba(153, 102, 255, 1)",
-              "rgba(255, 159, 64, 1)",
-              "rgba(255,99,132,1)",
-              "rgba(54, 162, 235, 1)",
-              "rgba(255, 206, 86, 1)",
-              "rgba(75, 192, 192, 1)",
-              "rgba(153, 102, 255, 1)",
-              "rgba(255, 159, 64, 1)",
+              "rgba(255, 145, 175)",
+              "rgba(250, 165, 168)",
+              "rgba(246, 185, 161)",
+              "rgba(241, 204, 153)",
+              "rgba(237, 224, 146)",
+              "rgba(232, 244, 139)",
             ],
-            pointBorderColor: "#2554FF",
-            data: [46051, 103754, 10649, 84930, 25967, 65397],
+            borderWidth: 1,
           },
         ],
       },
       options: {
+        responsive: true,
+        maintainAspectRatio: false,
+
+        title: {
+          display: true,
+          text: "Population of Halland",
+          fontColor: "hotpink",
+          fontSize: 24,
+          position: "left",
+          padding: 16,
+        },
+        legend: {
+          align: "end",
+          labels: {
+            fontColor: "black",
+            fontSize: 14,
+          },
+        },
+        layout: {
+          padding: 16,
+        },
         scales: {
           yAxes: [
             {
@@ -66,16 +76,11 @@ export default {
           xAxes: [
             {
               gridLines: {
-                display: false,
+                display: true,
               },
             },
           ],
         },
-        legend: {
-          display: true,
-        },
-        responsive: true,
-        maintainAspectRatio: false,
       },
     };
   },

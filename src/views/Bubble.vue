@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3>Bubble Chart Example in Vue</h3>
-    <bubble-chart></bubble-chart>
+    <h2>Bubble Chart in vue with vue3-chart-v2 and chart.js</h2>
+    <BubbleChart />
   </div>
 </template>
 
