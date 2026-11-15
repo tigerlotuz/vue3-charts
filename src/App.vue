@@ -36,7 +36,7 @@ export default {
   font-family: "Roboto", sans-serif;
 }
 h2 {
-  padding: 5rem;
+  padding: 3rem;
 }
 .app {
   -webkit-font-smoothing: antialiased;
