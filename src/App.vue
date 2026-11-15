@@ -48,7 +48,7 @@ h2 {
   margin: 0;
   padding: 2rem;
   background-color: #131313;
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
 }
 .nav a {
   font-weight: bold;
@@ -58,7 +58,8 @@ h2 {
 }
 .nav a:hover,
 .nav a:focus,
-.nav a:active {
+.nav a:active,
+.nav a.router-link-exact-active {
   color: hotpink;
 }
 </style>
