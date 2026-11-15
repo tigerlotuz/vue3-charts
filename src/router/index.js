@@ -13,41 +13,49 @@ const routes = [
   {
     path: "/",
     name: "Line",
+    meta: { title: "Line" },
     component: Line,
   },
   {
     path: "/bar",
     name: "Bar",
+    meta: { title: "Bar" },
     component: Bar,
   },
   {
     path: "/doughnut",
     name: "Doughnut",
+    meta: { title: "Doughnut" },
     component: Doughnut,
   },
   {
     path: "/pie",
     name: "Pie",
+    meta: { title: "Pie" },
     component: Pie,
   },
   {
     path: "/radar",
     name: "Radar",
+    meta: { title: "Radar" },
     component: Radar,
   },
   {
     path: "/polar-area",
     name: "PolarArea",
+    meta: { title: "Polar Area" },
     component: PolarArea,
   },
   {
     path: "/bubble",
     name: "Bubble",
+    meta: { title: "Bubble" },
     component: Bubble,
   },
   {
     path: "/scatter",
     name: "Scatter",
+    meta: { title: "Scatter" },
     component: Scatter,
   },
 ];
