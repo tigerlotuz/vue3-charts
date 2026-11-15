@@ -7,20 +7,23 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "chart.js": "^3.5.0",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0",
+    "vue": "^3.2.13",
     "vue-router": "^4.0.11",
     "vue3-chart-v2": "^0.8.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-babel": "~5.0.8",
     "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/compiler-sfc": "^3.2.13",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
+    "eslint": "^7.5.0",
     "eslint-plugin-vue": "^7.0.0"
   },
   "eslintConfig": {
